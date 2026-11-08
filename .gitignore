@@ -1,0 +1,19 @@
+# Unreal project: distributed as a GitHub Release zip, not in git (no LFS)
+/ColorCubeChat/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# models / generated
+*.safetensors
+*.bin
+*.onnx
+
+# private working notes and raw captures
+_prep/
+
+# OS / editor
+.DS_Store
+Thumbs.db

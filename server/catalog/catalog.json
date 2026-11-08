@@ -1,0 +1,66 @@
+[
+  {
+    "id": "cube_red",
+    "title": "cube red",
+    "descriptions": [
+      "make the cube red",
+      "change the color of the cube to red",
+      "paint the cube red",
+      "rendi il cubo rosso",
+      "cambia il colore del cubo in rosso",
+      "colora il cubo di rosso"
+    ],
+    "params": {
+      "color": "red"
+    },
+    "reply": "The cube is now red."
+  },
+  {
+    "id": "cube_green",
+    "title": "cube green",
+    "descriptions": [
+      "make the cube green",
+      "change the color of the cube to green",
+      "paint the cube green",
+      "rendi il cubo verde",
+      "cambia il colore del cubo in verde",
+      "colora il cubo di verde"
+    ],
+    "params": {
+      "color": "green"
+    },
+    "reply": "The cube is now green."
+  },
+  {
+    "id": "cube_blue",
+    "title": "cube blue",
+    "descriptions": [
+      "make the cube blue",
+      "change the color of the cube to blue",
+      "paint the cube blue",
+      "rendi il cubo blu",
+      "cambia il colore del cubo in blu",
+      "colora il cubo di blu"
+    ],
+    "params": {
+      "color": "blue"
+    },
+    "reply": "The cube is now blue."
+  },
+  {
+    "id": "cube_white",
+    "title": "cube white",
+    "descriptions": [
+      "make the cube white",
+      "change the color of the cube to white",
+      "paint the cube white",
+      "rendi il cubo bianco",
+      "cambia il colore del cubo in bianco",
+      "colora il cubo di bianco"
+    ],
+    "params": {
+      "color": "white"
+    },
+    "reply": "The cube is now white."
+  }
+]

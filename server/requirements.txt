@@ -1,0 +1,5 @@
+# install PyTorch FIRST from https://pytorch.org/get-started/locally/ (pick your CUDA build, or CPU)
+sentence-transformers
+fastapi
+uvicorn
+numpy

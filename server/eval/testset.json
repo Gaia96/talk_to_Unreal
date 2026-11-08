@@ -1,0 +1,82 @@
+[
+ {
+  "q": "make the cube red",
+  "gold": "cube_red"
+ },
+ {
+  "q": "I want the cube to be red",
+  "gold": "cube_red"
+ },
+ {
+  "q": "il cubo deve essere rosso",
+  "gold": "cube_red"
+ },
+ {
+  "q": "fammi il cubo rosso",
+  "gold": "cube_red"
+ },
+ {
+  "q": "turn the cube green",
+  "gold": "cube_green"
+ },
+ {
+  "q": "colora il cubo di verde",
+  "gold": "cube_green"
+ },
+ {
+  "q": "paint the cube blue please",
+  "gold": "cube_blue"
+ },
+ {
+  "q": "rendi il cubo blu",
+  "gold": "cube_blue"
+ },
+ {
+  "q": "can you make the cube blu?",
+  "gold": "cube_blue"
+ },
+ {
+  "q": "set the cube back to white",
+  "gold": "cube_white"
+ },
+ {
+  "q": "riporta il cubo bianco",
+  "gold": "cube_white"
+ },
+ {
+  "q": "cube white",
+  "gold": "cube_white"
+ },
+ {
+  "q": "make the cube bigger",
+  "gold": null
+ },
+ {
+  "q": "paint the wall red",
+  "gold": null
+ },
+ {
+  "q": "order me a pizza",
+  "gold": null
+ },
+ {
+  "q": "what's the weather like in Genoa?",
+  "gold": null
+ },
+ {
+  "q": "write a poem about robots",
+  "gold": null
+ },
+ {
+  "q": "chi ha vinto la partita ieri?",
+  "gold": null
+ },
+ {
+  "q": "accendi le luci",
+  "gold": null
+ },
+ {
+  "q": "make the sphere yellow",
+  "gold": null
+ }
+]
