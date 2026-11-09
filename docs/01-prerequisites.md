@@ -142,6 +142,76 @@ python3 --version
 git --version
 ```
 
+## Get this repository
+
+Everything in the guide happens inside a local copy of this repository: the Unreal project of [02](02-unreal-project.md) is created in it, and the commands of [03](03-varest-plugin.md) and [04](04-python-server.md) are run from it. Make the copy once, now, and in the right place.
+
+### Choose where to put it
+
+The copy will grow to several GB once you create the Unreal project in it. Choose the folder with these rules:
+
+- **A short path with no spaces**, for example `C:\dev` on Windows or `~/dev` on Linux and macOS. Unreal Engine and its build tools fail on long paths (Windows limits a full path to 260 characters) and on spaces in some steps.
+- **Not inside a synchronised folder**: OneDrive, Dropbox, Google Drive, iCloud (on Windows, `Documents` and `Desktop` are often OneDrive folders). The sync client locks and uploads thousands of generated files and breaks builds.
+- **Not inside another Git repository.**
+
+### Clone it
+
+Open a terminal (PowerShell on Windows, Terminal on macOS and Linux) and run:
+
+**Windows (PowerShell)**
+
+```powershell
+mkdir C:\dev
+cd C:\dev
+git clone https://github.com/Gaia96/talk_to_Unreal.git
+cd talk_to_Unreal
+```
+
+**Linux and macOS**
+
+```bash
+mkdir -p ~/dev
+cd ~/dev
+git clone https://github.com/Gaia96/talk_to_Unreal.git
+cd talk_to_Unreal
+```
+
+Use the `https://` address above. The `git@github.com:...` (SSH) address needs a key configured on your GitHub account and is not needed for a public repository.
+
+Check that you are in the right folder:
+
+```bash
+ls
+```
+
+(on Windows PowerShell `dir`). The listing must show `docs`, `server` and `project-files`. The folder `ColorCubeChat` is not there yet: you create it in [02](02-unreal-project.md). From now on, "the repository root" in this guide means this folder.
+
+If `git clone` answers *destination path 'talk_to_Unreal' already exists and is not an empty directory*, you already cloned it (or unpacked something with that name) here: either `cd talk_to_Unreal` and continue, or rename the old folder.
+
+### Do not use "Download ZIP"
+
+GitHub's green **Code** button also offers *Download ZIP*. It gives you the files but no Git history, so you cannot update later with `git pull`, and the unpacked folder is called `talk_to_Unreal-main`, which does not match the name used in the guide. Use `git clone`.
+
+### Keep your own work apart
+
+You will probably change files in this repository (the catalog in `server/catalog/`, your own scenario, notes). Two ways to do it without trouble:
+
+- **Fork first.** On GitHub press **Fork**, then clone *your* fork (`https://github.com/<your-user>/talk_to_Unreal.git`) with the commands above. You can then `git push` your changes to your own copy. You cannot push to the original repository, and that is intended.
+- **Or work on a branch** of the plain clone: `git switch -c my-work`. Your changes stay on that branch and the original `main` stays clean.
+
+Two things are never committed, because `.gitignore` excludes them: the Unreal project folder `ColorCubeChat/` (large, generated) and the Python virtual environment `.venv/`. If `git status` lists either of them, do not force-add them with `git add -f`.
+
+### Get later corrections
+
+The guide is updated when errors are found. To get the new version, from the repository root:
+
+```bash
+git status
+git pull
+```
+
+`git status` must say *nothing to commit, working tree clean* before you pull. Your `ColorCubeChat/` folder is not affected by `git pull`. If you changed tracked files and `git pull` refuses to run, save your changes first: `git stash`, then `git pull`, then `git stash pop`.
+
 ## Editor language
 
 Set the Unreal editor to English before you follow [06](06-blueprints.md) (the guide uses the English node names). You can do it after you create the project, in [02](02-unreal-project.md): Edit → **Editor Preferences** → type `language` in the search box → **Region & Language** → **Editor Language** = **English**. Restart the editor when asked. The setting belongs to your user, not to the project.

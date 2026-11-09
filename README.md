@@ -26,6 +26,17 @@ flowchart LR
 - About 90 GB of free disk space, Python 3.10 to 3.12, Git, and a C++ toolchain on Windows and macOS (to compile one plugin).
 - Internet access once, to download the engine, the plugin, PyTorch and 4.5 GB of models.
 
+## Get the code
+
+Clone the repository into a short folder with no spaces, outside OneDrive, Dropbox and similar synced folders (for example `C:\dev` on Windows, `~/dev` elsewhere):
+
+```bash
+git clone https://github.com/Gaia96/talk_to_Unreal.git
+cd talk_to_Unreal
+```
+
+Use `git clone`, not *Download ZIP*. The reasons, the fork/branch advice and how to update are in [docs/01-prerequisites.md](docs/01-prerequisites.md#get-this-repository). Git must be installed first (same chapter).
+
 ## Where to start
 
 Read the chapters in order, starting from [docs/00-overview.md](docs/00-overview.md).
